@@ -6,7 +6,7 @@ export const company = {
   since: '2022',
   address: {
     business: '경기도 파주시 산내로104번길 21-11',
-    warehouse: '경기도 고양시 덕양구 향기로180, DMC마스터원 1401호',
+    warehouse: '경기도 고양시 덕양구 향기로180, 1401호',
   },
   contact: {
     phone: '+82-10-8357-1346',
