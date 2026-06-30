@@ -45,6 +45,19 @@
   font-size: 14px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; transition: background .2s, color .2s; }
 .nav-cta:hover { background: var(--on-dark); color: var(--on-primary); }
 
+/* 언어 전환 토글 */
+.lang-toggle {
+  display: inline-flex; align-items: center; gap: 8px;
+  height: 40px; padding: 0 16px;
+  border: 1px solid var(--hairline);
+  font-weight: 700; letter-spacing: 1px; text-transform: uppercase;
+  color: var(--muted); transition: border-color .2s ease;
+}
+.lang-toggle:hover { border-color: var(--on-dark); }
+.lang-toggle .on { color: var(--on-dark); }
+.lang-toggle .lang-sep { color: var(--hairline); font-weight: 400; }
+.lang-toggle:focus-visible { outline: 2px solid var(--m-red); outline-offset: 3px; }
+
 /* ---- Page shell ---- */
 .page { min-height: 100vh; display: flex; flex-direction: column; background: var(--canvas); }
 .shell { width: 100%; max-width: 1440px; margin: 0 auto; }
@@ -82,21 +95,8 @@
 .hero-stats .v { color: var(--ink); }
 .hero-stats .k { color: var(--muted); margin-top: var(--s-xxs); }
 
-/* ---- Right: bearing visual + info card ---- */
+/* ---- Right: info card ---- */
 .hero-visual { position: relative; display: flex; justify-content: center; align-items: center; }
-
-.bearing {
-  position: absolute; width: clamp(440px, 48vw, 640px); height: clamp(440px, 48vw, 640px);
-  top: 50%; left: 50%; transform: translate(-50%, -50%);
-  opacity: 0.55; pointer-events: none;
-}
-.bearing .ring { fill: none; stroke: var(--hairline); stroke-width: 1; }
-.bearing .ring--dash { stroke-dasharray: 2 7; }
-.bearing .ring--m { stroke: var(--m-blue-dark); stroke-width: 2; }
-.bearing .tick { stroke: var(--muted); stroke-width: 1.2; }
-.bearing .ball { fill: var(--surface-card); stroke: var(--muted); stroke-width: 1; }
-.bearing .spin { transform-origin: 200px 200px; animation: spin 64s linear infinite; }
-.bearing .spin-rev { transform-origin: 200px 200px; animation: spin 42s linear infinite reverse; }
 
 /* ---- Info card ---- */
 .info-card {
@@ -151,7 +151,7 @@
    ============================================================ */
 @media (max-width: 1024px) {
   .hero { grid-template-columns: 1fr; gap: var(--s-xl); }
-  .hero-visual { justify-content: stretch; min-height: 420px; }
+  .hero-visual { justify-content: stretch; }
   .info-card { width: 100%; }
   .hero-sub { max-width: none; }
 }
