@@ -2,7 +2,7 @@
 export const company = {
   nameEn: 'WON INTERNATIONAL',
   nameKo: '원인터네셔널',
-  ceo: { ko: '원왕연', en: 'Won Wang-yeon' },
+  ceo: { ko: '원왕연', en: 'CHRIS LEE' },
   bizNo: '203-19-17515',
   since: '2022',
   address: {
