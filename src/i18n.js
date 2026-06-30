@@ -1,0 +1,68 @@
+// 사이트 전체 UI 문구의 단일 출처 (영어/한국어)
+// 새 페이지를 만들 때도 여기에 문구를 추가해서 두 언어를 함께 관리합니다.
+export const translations = {
+  en: {
+    nav: { about: 'About', contact: 'Contact' },
+    hero: {
+      eyebrow: 'Precision Bearing Supply Partner',
+      sub: 'A reliable supply partner for distributors sourcing industrial bearings. Tell us the specifications you need, and we will respond quickly with an accurate quote.',
+      ctaQuote: 'Request a Quote',
+      ctaContact: 'View Contact',
+      statSinceLabel: 'Established',
+      statCeoLabel: 'CEO',
+      statDealsLabel: 'Specialty',
+      statDealsValue: 'Industrial Bearings',
+    },
+    card: {
+      badge: 'SINCE',
+      meta: (ceo, biz) => `CEO ${ceo} · Reg. No. ${biz}`,
+      businessAddr: 'Business Address',
+      warehouse: 'Warehouse',
+      phone: 'Phone',
+      fax: 'Fax',
+      email: 'Email',
+    },
+    footer: {
+      tagline: 'A reliable supply partner for distributors sourcing industrial bearings.',
+      company: 'Company',
+      inquiry: 'Inquiry',
+      about: 'About',
+      contact: 'Contact',
+      rights: (year, name, ceo) => `© ${year} ${name}. CEO ${ceo}.`,
+      bizNo: (no) => `Business Reg. No. ${no}`,
+    },
+    lang: { toggleTo: '한국어', label: 'Language' },
+  },
+  ko: {
+    nav: { about: '소개', contact: '연락처' },
+    hero: {
+      eyebrow: '정밀 베어링 공급 파트너',
+      sub: '산업용 베어링을 찾는 유통사를 위한 안정적인 공급 파트너입니다. 필요한 규격을 알려주시면 정확한 견적으로 빠르게 답해 드립니다.',
+      ctaQuote: '견적 문의하기',
+      ctaContact: '연락처 보기',
+      statSinceLabel: '설립',
+      statCeoLabel: '대표',
+      statDealsLabel: '취급',
+      statDealsValue: '산업용 베어링',
+    },
+    card: {
+      badge: 'SINCE',
+      meta: (ceo, biz) => `대표 ${ceo} · 사업자 ${biz}`,
+      businessAddr: '사업장 주소',
+      warehouse: '창고',
+      phone: '전화',
+      fax: '팩스',
+      email: '이메일',
+    },
+    footer: {
+      tagline: '산업용 베어링을 찾는 유통사를 위한 안정적인 공급 파트너.',
+      company: '회사',
+      inquiry: '문의',
+      about: '소개',
+      contact: '연락처',
+      rights: (year, name, ceo) => `© ${year} ${name}. 대표 ${ceo}.`,
+      bizNo: (no) => `사업자등록번호 ${no}`,
+    },
+    lang: { toggleTo: 'EN', label: '언어' },
+  },
+}
